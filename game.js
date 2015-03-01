@@ -94,14 +94,18 @@ addEventListener("keyup", function (e) {
 	delete keysDown[e.keyCode];
 }, false);
 
+//this variable is true when the game starts, false from that point on
+var start = true;
 // Reset the game when the player catches a monster
 var reset = function () {
-	hero.x = canvas.width / 2;
-	hero.y = canvas.height / 2;
-
-	// Throw the monster somewhere on the screen randomly
-	monster.x = 32 + (Math.random() * (canvas.width - 64));
-	monster.y = -100;
+if (start){
+hero.x = canvas.width / 2;
+hero.y = canvas.height / 2;
+start = false;
+}
+// Throw the monster somewhere on the screen randomly
+monster.x = 32 + (Math.random() * (canvas.width - 64));
+monster.y = -100;
 };
 
 // Update game objects
