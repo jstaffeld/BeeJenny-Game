@@ -1,0 +1,40 @@
+// BeeJenny version Alpha 2.0
+// Created by Jeremy Staffeld
+
+body {
+  background-color: #3F8330;
+}
+.wrap {
+  width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo {
+  font-family: 'Chewy', cursive;
+	font-size: 60px;
+	color: #a70;
+	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	margin: -10px 0 7px 0;
+}
+#myCanvas {
+  width: 512px;
+	text-align: center;
+}
+#inst {
+  margin: 0 auto;
+	width: 60%;
+	text-align: left;
+	font-family: 'Dosis', sans-serif;
+}
+footer {
+  width: 250px;
+  background-color: black;
+	opacity: .3;
+	color: white;
+  margin: 20px auto 0;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+}
