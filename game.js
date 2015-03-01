@@ -16,10 +16,7 @@ function toggleMusic() {
 	document.getElementById('toggle-btn').value = "MUSIC ON";
 	}
 }
-	
-//document.addEventListener('DOMContentLoaded',domloaded,false);
-//function domloaded(){
-	
+
 // Canvas div myCanvas
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -47,7 +44,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
 	heroReady = true;
 };
-heroImage.src = "http://i.imgur.com/CAz8JoL.png";
+heroImage.src = "http://i.imgur.com/mfqdM2v.png";
 
 // Monster image
 var monsterReady = false;
@@ -64,7 +61,7 @@ music.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
     }, false);
-var nasty = new Audio("audio/nasty.wav");
+var nasty = new Audio("buzz1.wav");
 var lose = new Audio("audio/lose.wav");
 lose.addEventListener('ended', function() {
         if (musicOn) {
@@ -143,9 +140,9 @@ var update = function (modifier) {
 		&& monster.y <= (hero.y + 32)
 	) {
 		//nasty.currentTime = 0;
-		//nasty.play();
+		nasty.play();
 		++monstersKilled;
-    //monster.speed = monster.speed+5;
+    		monster.speed = monster.speed+5;
 		reset();
 	}
 
@@ -199,7 +196,7 @@ var render = function () {
 };
 
 // The main game loop
-var main = function() {
+var main = function () {
 	var now = Date.now();
 	var delta = now - then;
 
@@ -213,3 +210,4 @@ var main = function() {
 reset();
 var then = Date.now();
 //setInterval(main, 1); // Execute as fast as possible
+
