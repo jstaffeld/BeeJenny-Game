@@ -1,41 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Bee Jenny a2.0</title>
+<title>Bee Jenny a2.1</title>
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-<div class="wrap">
-	<div class="logo">BeeJenny</div>
-<canvas id="myCanvas" width="512" height="480"
-style="border:0px solid #000000;">
-<script type="text/javascript" src="game.js"></script>
-</canvas>
-	<div id="inst">
-		<h1>Instructions:</h1>
-		<p>Try to catch the bees before they reach the bottom of the screen.</p>
-	</div>
-<footer>
-	<a href="http://jeremystaffeld.com" target="_blank">Jeremy Staffeld</a> 2015
-</footer>
-</div>
-</body>
-</html>
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Bee Jenny a2.0</title>
-<meta charset="UTF-8" />
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
+<body onload="oneTimeTasks()" onKeyPressed="keyFunction(e)">
 <div class="wrap">
 	<div class="logo">BeeJenny</div>
 <canvas id="myCanvas" width="512" height="480"
