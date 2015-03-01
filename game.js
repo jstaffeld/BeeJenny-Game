@@ -1,7 +1,25 @@
-document.addEventListener('DOMContentLoaded',domloaded,false);
-function domloaded(){
+function oneTimeTasks() {
+	gameInterval = setInterval(main, 1);
+	started = false;
+	musicOn = true;
+	music.play();
+}
 
-
+function toggleMusic() {
+	if (musicOn) {
+	musicOn = false;
+	music.pause();
+	document.getElementById('toggle-btn').value = "MUSIC OFF";
+	} else {
+	musicOn = true;
+	music.play();
+	document.getElementById('toggle-btn').value = "MUSIC ON";
+	}
+}
+	
+//document.addEventListener('DOMContentLoaded',domloaded,false);
+//function domloaded(){
+	
 // Canvas div myCanvas
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -21,7 +39,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "images/background.png";
+bgImage.src = "http://i.imgur.com/tVN9L77.png";
 
 // Hero image
 var heroReady = false;
@@ -177,7 +195,7 @@ var render = function () {
 };
 
 // The main game loop
-var main = function () {
+var main = function() {
 	var now = Date.now();
 	var delta = now - then;
 
@@ -191,25 +209,3 @@ var main = function () {
 reset();
 var then = Date.now();
 //setInterval(main, 1); // Execute as fast as possible
-
-
-/*  add to top when debugged
- * 
-   function oneTimeTasks() {
-	gameInterval = setInterval(main, 1);
-	started = false;
-	musicOn = true;
-	music.play();
-}
-
-function toggleMusic() {
-	if (musicOn) {
-	musicOn = false;
-	music.pause();
-	document.getElementById('toggle-btn').value = "MUSIC OFF";
-	} else {
-	musicOn = true;
-	music.play();
-	document.getElementById('toggle-btn').value = "MUSIC ON";
-	}
-} */
