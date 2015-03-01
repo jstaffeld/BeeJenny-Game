@@ -3,4 +3,4 @@ A simple game based on a <a href="http://www.lostdecadegames.com/how-to-make-a-s
 
 A working Codepen pen of version [alpha 2.0] is here: <a href="http://codepen.io/jstaffeld/pen/jEKQKQ" target="_blank">http://codepen.io/jstaffeld/pen/jEKQKQ</a>
 
-My projects home for this game is here: <a href="http://jeremystaffeld.com/projects/BeeJenny/" target="_blank">http://jeremystaffeld.com/projects/beejenny/</a>
+My projects home for this game is here: <a href="http://jeremystaffeld.com/projects/BeeJenny/" target="_blank">http://jeremystaffeld.com/projects/BeeJenny/</a>
