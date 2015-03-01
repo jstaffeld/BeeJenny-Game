@@ -1,13 +1,12 @@
-// BeeJenny version Alpha 2.0
-// Created by Jeremy Staffeld
-
 body {
-  background-color: #3F8330;
+	background-color: #3F8330;
 }
+
 .wrap {
-  width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	background-color: #3F8330;
 }
 .logo {
   font-family: 'Chewy', cursive;
@@ -21,8 +20,8 @@ body {
 	text-align: center;
 }
 #inst {
-  margin: 0 auto;
-	width: 60%;
+	margin: 0 auto;
+	width: 35%;
 	text-align: left;
 	font-family: 'Dosis', sans-serif;
 }
